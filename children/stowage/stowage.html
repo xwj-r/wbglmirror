@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+
+<body>
+  <h5>向父组件传递数据</h5>
+  <textarea name="" id="datassss" cols="30" rows="10"></textarea>
+  <button id="btn" onclick="send()">发送数据</button>
+  
+  <h5>接受到的数据</h5>
+  <div id="get"></div>
+</body>
+<script>
+  console.log(window.rawWindow,window,window.proxyWindow,23);
+  const data = window.microApp.getData()
+  function dataListener (data) {
+    console.log('来自基座应用的数据', JSON.stringify(data))
+    document.querySelector("#get").innerText  = JSON.stringify(data)
+  }
+  window.microApp.addDataListener(dataListener, true);
+ 
+  window.rawWindow.send =() => {
+    let value = document.querySelector("#data").value
+    console.log('子基座发送数据', value);
+    window.microApp.dispatch({type: '子应用发送的数据',data: value})
+  }
+
+  // document.querySelector("#btn").addEventListener("click",send)
+</script>
+</html>

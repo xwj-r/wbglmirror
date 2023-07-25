@@ -1,0 +1,32 @@
+
+
+<H3>配载可视化父页面</H3>
+<div>
+  <div style="display: flex;">
+    <div style="border: solid 1px #999;padding: 10px;">
+      <H5>向子页面发送数据</H5>
+      <textarea name="" id="datassss" cols="30" rows="10" [(ngModel)]="data" ></textarea>
+      <br/>
+      <button (click)="send()">发送</button>
+    </div>
+    <div style="border: solid 1px #999;padding: 10px;">
+      <H5>接受子页面数据</H5>
+      {{childdata || ''}}</div>
+  </div>
+
+<div style="border: solid 1px #000;padding: 10px;margin-top: 20px;">
+  <H3>配载可视化子页面</H3>
+  <!-- <iframe src="http://localhost:2100/index.html" frameborder="0" width="1800px" height="1000px" id="unity3d"></iframe> -->
+  <micro-app
+    name='appname-angular11'
+    [attr.url]="'http://localhost:2100/index.html'"
+    [data]='microAppData'
+    (beforemount)='handleBeforeMount()'
+    (mounted)='handleMount()'
+    (unmount)='handleUnmount()'
+    (error)='handleError()'
+    (datachange)='handleDataChange($event)'
+  ></micro-app>
+</div>
+
+</div>

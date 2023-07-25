@@ -1,0 +1,180 @@
+{
+	"SCHEME_ID": 112,
+	"SCHEME_NO": "20230515171253",
+	"PRO_ID": 113,
+	"VESSEL_CD": "0775",
+	"CARGO_LIST": [
+		{
+			"CARGO_ID": 1,
+			"APPLY_CARGO_ID":2,
+			"CUSTOMER_NM":"客户名称",
+			"CUSTOMER_CD":"客户代码",
+			"CARGO_NM":"货物名称",
+			"CARGO_TYPE":"货类",
+			"CARGO_TYPE_NM":"货类名称",
+			"CARGO_L":2.02,
+			"CARGO_W":2.02,
+			"CARGO_H":2.02,
+			"CARGO_PULP_NUM_H":2,
+			"CARGO_PULP_NUM_V":2,
+			"CARGO_LENGTH_GAP":0.2,
+			"CARGO_WIDTH_GAP":0.2,
+			"CARGO_EXTENSION_L":2.2,
+			"CARGO_EXTENSION_W":2.2,
+			"CARGO_EXTENSION_H":2.2,
+			"CARGO_WEIGHT":2.2,
+			"CARGO_X_COOR":2.2,
+			"CARGO_Y_COOR":2.2,
+			"CARGO_Z_COOR":2.2,
+			"CARGO_ROTATION":2.2,
+			"CARGO_CORE_X":2.2,
+			"CARGO_CORE_Y":2.2,
+			"CARGO_CORE_Z":2.2,
+			"CARGO_BAY_SN":2,
+			"CARGO_STACK_SN":2,
+			"CARGO_TIER_SN":2,
+			"CARGO_STACK_SN_W":2,
+			"CARGO_TIER_SN_W":2,
+			"CARGO_CABIN_NO":2,
+			"CARGO_LP":"装港",
+			"CARGO_LP_NM":"装港名称",
+			"CARGO_DP":"卸港",
+			"CARGO_DP_NM":"卸港名称"
+		}
+	],
+	"BARRIER_LIST": [
+	    {
+			"BARRIER_ID": 1,
+			"BARRIER_L":2.02,
+			"BARRIER_W":2.02,
+			"BARRIER_H":2.02,
+			"BARRIER_X_COOR":2.2,
+			"BARRIER_Y_COOR":2.2,
+			"BARRIER_Z_COOR":2.2
+		}
+	],
+	"WAIT_CARGO_LIST": [
+		{
+			"APPLY_CARGO_ID": 1,
+			"CUSTOMER_NM": "客户名称",
+			"CUSTOMER_CD": "CD001",
+			"CARGO_TYPE": "4701",
+			"CARGO_TYPE_NM": "纸浆",
+			"CARGO_NM": "MDP",
+			"CARGO_L": 895,
+			"CARGO_W": 1350,
+			"CARGO_H": 1700,
+			"MAX_HBHP_NUM": 2,
+			"MAX_HBVP_NUM": 6,
+			"CARGO_LENGTH_GAP": 40,
+			"CARGO_WIDTH_GAP": 40,
+			"CARGO_EXTENSION_L": 0,
+			"CARGO_EXTENSION_W": 0,
+			"CARGO_EXTENSION_H": 0,
+			"CARGO_WEIGHT": 2000,
+			"CARGO_NUM": 60,
+			"CARGO_LP": "SHANGHAI",
+			"CARGO_LP_NM": "上海",
+			"CARGO_DP": "SINGAPORE",
+			"CARGO_DP_NM": "新加坡"
+		},
+		{
+			"APPLY_CARGO_ID": 2,
+			"CUSTOMER_NM": "客户名称",
+			"CUSTOMER_CD": "CD001",
+			"CARGO_TYPE": "4701",
+			"CARGO_TYPE_NM": "纸浆",
+			"CARGO_NM": "Wrapped",
+			"CARGO_L": 960,
+			"CARGO_W": 1380,
+			"CARGO_H": 1820,
+			"MAX_HBHP_NUM": 2,
+			"MAX_HBVP_NUM": 6,
+			"CARGO_LENGTH_GAP": 40,
+			"CARGO_WIDTH_GAP": 40,
+			"CARGO_EXTENSION_L": 0,
+			"CARGO_EXTENSION_W": 0,
+			"CARGO_EXTENSION_H": 0,
+			"CARGO_WEIGHT": 2000,
+			"CARGO_NUM": 25,
+			"CARGO_LP": "GUANGZHOU",
+			"CARGO_LP_NM": "广州",
+			"CARGO_DP": "SINGAPORE",
+			"CARGO_DP_NM": "新加坡"
+		},
+		{
+			"APPLY_CARGO_ID":3,
+			"CUSTOMER_NM": "客户名称1",
+			"CUSTOMER_CD": "CD001",
+			"CARGO_TYPE": "4701",
+			"CARGO_TYPE_NM": "纸浆",
+			"CARGO_NM": "Wrapped",
+			"CARGO_L": 960,
+			"CARGO_W": 1380,
+			"CARGO_H": 1820,
+			"MAX_HBHP_NUM": 2,
+			"MAX_HBVP_NUM": 6,
+			"CARGO_LENGTH_GAP": 40,
+			"CARGO_WIDTH_GAP": 40,
+			"CARGO_EXTENSION_L": 0,
+			"CARGO_EXTENSION_W": 0,
+			"CARGO_EXTENSION_H": 0,
+			"CARGO_WEIGHT": 2000,
+			"CARGO_NUM": 25,
+			"CARGO_LP": "GUANGZHOU",
+			"CARGO_LP_NM": "广州",
+			"CARGO_DP": "SINGAPORE",
+			"CARGO_DP_NM": "新加坡"
+		}
+	],
+	"BAY_LIST":[
+		{
+			"BAY_SN":1,
+			"BAY_CD_MIN":7,
+			"BAY_CD_MAX":9,
+			"VESSEL_CABIN_NO":1,
+			"STACK_LIST_S":
+			[ 
+				{
+					"STACK_SN":1,
+					"BAY_TYPE":1,
+					"BAY_TIER":11,
+					"WEIGHT_LIM":11.25,
+					"IS_CABIN_NO":"Y",
+					"TIER_WTH":3.24,
+					"TIER_LGH":6.5,
+					"TIER_HGT":3.1,
+					"BAY_X":0.25,
+					"BAY_Y":1.2,
+					"BAY_Z":5.6,
+					"TIER_UNPLACABLE":[
+						{
+							"TIER_SN":1
+						}
+					]
+				}
+			],
+			"STACK_LIST_W":
+			[ 
+				{
+					"STACK_SN":1,
+					"BAY_TYPE":1,
+					"BAY_TIER":11,
+					"WEIGHT_LIM":11.25,
+					"IS_CABIN_NO":"Y",
+					"TIER_WTH":3.24,
+					"TIER_LGH":6.5,
+					"TIER_HGT":3.1,
+					"BAY_X":0.25,
+					"BAY_Y":1.2,
+					"BAY_Z":5.6,
+					"TIER_UNPLACABLE":[
+						{
+							"TIER_SN":1
+						}
+					]
+				}
+			]
+		}
+	]
+}
